@@ -1,0 +1,33 @@
+Section1
+#
+fg_color="green"
+#
+bg_color="black"
+#
+speed_increase_factor=1
+#
+show_grid=False
+#
+show_next=False
+#
+extetromino_distribution={3,2,2,1,1,1,2,2,3}
+#
+height = 0
+#
+width = 0
+#
+Section2
+#
+{ setGrid show_grid=True }
+#
+{ setHeight with (ht) height=ht}
+#
+{ setWidth with (wid) width=wid}
+#
+{ setFg with (color) fg_color=color}
+#
+{ mainFunc [call setGrid] [call setFg with color="red"] [call setHeight with ht=10] [call setWidth with wid=20]}
+#
+Section3
+#
+[ play with height=height width=width fg=fg_color bg=bg_color show_next=show_next dist=1 extetromino_distribution=extetromino_distribution show_grid=show_grid]

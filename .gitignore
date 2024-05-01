@@ -1,0 +1,8 @@
+*.tab.c
+*.tab.h
+*.out
+*.output
+*.yy.c
+*.pyc
+*.pyo
+/game_engine/__pycache__/
